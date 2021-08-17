@@ -19,7 +19,7 @@ class ListProducts extends Component {
 
     render() {
         return (
-            <div>
+            <div width="100%" className="text-center">
                 <table>
                     <thead>
                       <tr>

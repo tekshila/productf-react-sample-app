@@ -6,6 +6,15 @@ class ProductService {
     getProducts() {
         return axios.get(PRODUCT_URL)
     }
+
+    addProduct(productName,productType) {
+        console.log('productName : ' + productName)
+        console.log('productType : ' + productType)
+        return axios.post(PRODUCT_URL,{
+            name: productName,
+            type: productType
+        })
+    }
 }
 
 export default new ProductService()
